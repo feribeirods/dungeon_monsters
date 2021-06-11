@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Monsters</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <script src="jogo.js"></script>
+
+</head>
+
+<body onresize="ajustaTamanhoPalcoJogo()">
+
+    <div class="painel">
+
+        <div class="vida">
+            <img id="v1" src="heart/coracao_cheio.png">
+            <img id="v2" src="heart/coracao_cheio.png">
+            <img id="v3" src="heart/coracao_cheio.png">
+            
+        </div>
+
+        <div class="cronometro">
+                Tempo Restante <span id="cronometro"></span>
+        </div>
+
+        <div id="audio">
+            <audio controls autoplay>        
+                <source src="song.mp3" type="audio/mp3">
+              </audio>
+            </div>
+
+    </div>
+
+        
+    <script>
+
+        document.getElementById('cronometro').innerHTML = tempo
+        
+        setInterval(function() {
+            posicaoRandomica()
+        }, criaInimigoTempo)
+    </script>
+</body>
+
+</html>

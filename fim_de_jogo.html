@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+
+    <style>
+
+        html {
+            cursor: url(weapons/arma1.png) 30 30, auto;
+
+        }
+
+        @font-face {
+            font-family: "Pixellari";
+            src: url("font/Pixellari.woff")
+        }
+
+        body {
+            background-image: url(backgrounds/Battleground2/Bright/Battleground2.png);
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+
+        #gameover {
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 250px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        h1 {
+            font-family: Pixellari;
+            color: red;
+            font-size: 90px;
+        }
+
+        button {
+            font-size: 30px;
+            font-family: Pixellari;
+            padding: 5px;
+        }
+
+        button:hover {
+            background-color: red;
+            color: #FFF;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div style="background-color: rgba(255, 255, 255, 0.5);">
+        <img src="enemies/dragon/Attack1.png">
+        <img src="enemies/medusa/Attack1.png">
+        <img src="enemies/demon/Attack1.png">
+        <img src="enemies/jinn_animation/Attack1.png">
+    </div>
+
+    <div id="gameover"><h1>GAME <br> OVER</h1></div>
+    
+
+    <a href="index.html"><button>Jogar Novamente</button></a>
+    
+</body>
+
+</html>
